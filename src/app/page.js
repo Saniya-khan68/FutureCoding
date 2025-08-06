@@ -107,7 +107,7 @@ export default function Home() {
                 products or services online.
               </p>
               <p className="business-para">
-                Let's move your products towards online…
+                Lets move your products towards online…
               </p>
               <Link href="/contact">
                 <button className="business-button">Contact Us</button>
