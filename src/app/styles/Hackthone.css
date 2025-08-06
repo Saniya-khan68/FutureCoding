@@ -1,0 +1,121 @@
+.hackathon-page {
+  padding: 60px 20px;
+  background: #fdfdfd;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hackathon-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+
+.hackathon-intro {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #444;
+}
+
+.hackathon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.hackathon-card {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.hackathon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hackathon-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #0070f3;
+}
+
+.hackathon-card p {
+  margin: 4px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.register-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #005bb5;
+}
+@media (max-width: 768px) {
+  .hackathon-heading {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .hackathon-intro {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .hackathon-card {
+    padding: 16px;
+  }
+
+  .hackathon-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .hackathon-card p {
+    font-size: 0.9rem;
+  }
+
+  .register-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 500px) {
+  .hackathon-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding-bottom: 10px;
+  }
+
+  .hackathon-card {
+    min-width: 85%;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+}
