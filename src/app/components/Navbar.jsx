@@ -1,9 +1,9 @@
- 'use client';
+'use client';
 
 import Link from 'next/link';
 import { useState } from 'react';
 import '../styles/Navbar.css';
- 
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-      <h1 className="logo logo-animated">Future Coding</h1>
+        <h1 className="logo logo-animated">Future Coding</h1>
 
         <div className="menu-icon" onClick={toggleMenu}>
           <div className={`bar ${isOpen ? 'open' : ''}`}></div>

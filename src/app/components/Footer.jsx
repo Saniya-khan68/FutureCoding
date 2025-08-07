@@ -9,13 +9,13 @@ const Footer = () => {
       <div className="footer-container">
         <h2 className="footer-logo">Future Coding</h2>
         <p className="footer-text">Empowering the next generation of developers.</p>
-        
+
         <ul className="footer-links">
           <li><Link href="/">Home</Link></li>
           <li><Link href="/internships">Internships</Link></li>
-          <li><Link href="/hackathons">Hackathons</Link></li>
-          <li><Link href="/quizzes">Quizzes</Link></li>
-          <li><Link href="/aboutus">About Us</Link></li>
+          <li><Link href="/Hackthone">Hackathons</Link></li>
+          {/* <li><Link href="/quizzes">Quizzes</Link></li> */}
+          <li><Link href="/about-us">About Us</Link></li>
           <li><Link href="/contact">Contact</Link></li>
         </ul>
 
